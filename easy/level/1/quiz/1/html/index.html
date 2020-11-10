@@ -5,15 +5,17 @@
   <body>
     <h1>What is HTML called</h1>
     <button onclick="correct()">Hypertext Markup Languge</button>
-    <button onclick="wrong()">Help Tool Marking Languge</button>
-    <button onclick="wrong()">Hat To Markup Languge</button>
-    <button onclick="wrong()">Hometext Markking Languge</button>
+    <button onclick="wrong('1/2/')">Help Tool Marking Languge</button>
+    <button onclick="wrong('1/1/')">Hat To Markup Languge</button>
+    <button onclick="wrong('1/3/')">Hometext Markking Languge</button>
     <script>
       function correct() {
         alert("Correct!");
+        location.assign("https://brunozhon.github.io/quizzer/html/level/2/")
       }
-      function wrong() {
-        alert("Not so quite.")
+      function wrong(href) {
+        alert("Not so quite.");
+        location.assign("https://brunozhon.github.io/quizzer/html/level/" + href)
       }
     </script>
   </body>
